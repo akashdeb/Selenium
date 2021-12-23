@@ -5,7 +5,7 @@
 		<Parameter name="URL" value="https://phptravels.net/api/admin"/>
 		<Parameter name="username" value="admin@phptravels.com" />
 		<Parameter name="password" value="demoadmin" />
-		<Parameter name="invalidpassword" value="demoadmin" />
+		<Parameter name="invalidpassword" value="demoadmin123" />
 		<Parameter name="browser" value="Chrome" />
 	</TestRunParameters>
 </RunSettings>
