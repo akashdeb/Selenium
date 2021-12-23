@@ -1,10 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using OpenQA.Selenium;
 
 namespace Selenium.PageObjects
 {
-    internal class CustomerManagementPage
+    public class CustomerManagementPage
     {
+        IWebDriver driver;
+        public CustomerManagementPage(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
+        public IWebElement addCustomerButton => driver.FindElement(By.ClassName("btn btn-success"));
+
+
     }
 }
