@@ -14,7 +14,8 @@ namespace Selenium.PageObjects
         }
 
         public IWebElement addCustomerButton => driver.FindElement(By.ClassName("btn btn-success"));
-
+        public IWebElement specificCustomerCheckbox => driver.FindElement(By.XPath("//td[text()='Ankit']//preceding-sibling::td//input"));
+        public IWebElement deleteCustomerButton => driver.FindElement(By.Id("deleteAll"));
 
     }
 }

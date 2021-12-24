@@ -5,10 +5,16 @@ using OpenQA.Selenium;
 
 namespace Selenium.PageObjects
 {
-    internal class LoginPage
+    public class LoginPage
     {
         IWebDriver driver;
+
         public LoginPage(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
+        public LoginPage(IWebDriver driver, object driver1)
         {
             this.driver = driver;
         }

@@ -29,7 +29,7 @@ namespace Selenium.CustomMethods
             bool Present = false;
             try
             {
-                CustomBaseClass.MyDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+                BaseClass.MyDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
                 if (element.Displayed)
                 {
                     Present = true;
@@ -38,7 +38,7 @@ namespace Selenium.CustomMethods
 
                 else
                 {
-                    CustomBaseClass.MyDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+                    BaseClass.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
                     if (element.Displayed)
                     {
                         Present = true;
